@@ -34,3 +34,19 @@ Capturas de Tela
 Versão Mobile
 [assets/images/mobile.png](https://github.com/JohnatanShinon/login/blob/main/assets/images/mobile.png)
 
+# Tecnologias Utilizadas
+
+**HTML5* : Estrutura básica da página.
+
+**CSS3* : Estilização e animações.
+
+**Ionicons* : Ícones utilizados nos campos de entrada.
+
+**Créditos**
+
+**Imagem de Fundo** : A imagem de fundo (login2.jpg) foi fornecida pelo autor do projeto.
+
+**Fonte Poppins* : A fonte utilizada foi importada do Google Fonts.
+
+Licença
+Este projeto é de código aberto e está disponível sob a licença MIT .
