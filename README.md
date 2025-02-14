@@ -46,7 +46,7 @@ Versão Mobile
 
 **Imagem de Fundo** : A imagem de fundo (login2.jpg) foi fornecida pelo autor do projeto.
 
-**Fonte Poppins* : A fonte utilizada foi importada do Google Fonts.
+**Fonte Poppins** : A fonte utilizada foi importada do Google Fonts.
 
 Licença
 Este projeto é de código aberto e está disponível sob a licença MIT .
