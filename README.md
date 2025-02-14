@@ -34,7 +34,7 @@ Teste a responsividade redimensionando a janela do navegador ou usando ferrament
 
 Capturas de Tela
 [Versão Desktop]
-(assets/images/desktop.png)
+[assets/images/desktop.png](https://github.com/JohnatanShinon/login/blob/main/assets/images/desktop.png)
 
 Versão Mobile
 Mobile
