@@ -1,7 +1,8 @@
-Projeto: Tela de Login
+**Projeto: Tela de Login**
+
 Este é um projeto simples de uma tela de login estilizada com HTML e CSS. A interface foi projetada para ser responsiva, garantindo uma boa experiência tanto em dispositivos desktop quanto em dispositivos móveis.
 
-#Estrutura do Projeto
+**Estrutura do Projeto**
 
 projeto/
 ├── index.html          # Arquivo principal HTML
@@ -12,12 +13,12 @@ projeto/
         ├── desktop.png # Captura de tela da versão desktop
         └── mobile.png  # Captura de tela da versão mobile
 
-#Funcionalidades
+**Funcionalidades**
 
-Design moderno : A tela de login possui um design limpo e moderno, com um efeito de vidro fosco (backdrop-filter) no formulário.
-Responsividade : O layout se ajusta automaticamente para diferentes tamanhos de tela (desktop e mobile).
-Ícones Ionicons : Ícones nos campos de entrada melhoram a usabilidade.
-Transições suaves : Os rótulos dos campos de entrada sobem suavemente ao interagir com eles.
+**Design moderno** : A tela de login possui um design limpo e moderno, com um efeito de vidro fosco (backdrop-filter) no formulário.
+**Responsividade** : O layout se ajusta automaticamente para diferentes tamanhos de tela (desktop e mobile).
+**Ícones Ionicons** : Ícones nos campos de entrada melhoram a usabilidade.
+**Transições suaves** : Os rótulos dos campos de entrada sobem suavemente ao interagir com eles.
 
 #Pré-requisitos
 Para visualizar o projeto localmente, você precisará:
