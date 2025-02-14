@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e limpa */
+}
+
+/* Estilo global para o corpo */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a altura seja pelo menos a da tela */
+    background: url('assets/images/login2.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Seção principal (formulário) */
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borda semi-transparente */
+    border-radius: 20px; /* Bordas arredondadas */
+    backdrop-filter: blur(55px); /* Efeito de desfoque (vidro fosco) */
+    background-color: rgba(255, 255, 255, 0.1); /* Fallback caso o backdrop-filter não funcione */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem; /* Espaçamento interno */
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Campos de entrada */
+.inputBox {
+    position: relative;
+    margin: 30px 0; /* Espaçamento entre os campos */
+    max-width: 310px; /* Largura máxima */
+    border-bottom: 2px solid #fff; /* Linha inferior branca */
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%; /* Posiciona o rótulo no meio do campo */
+    left: 5px;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    color: #fff; /* Cor do texto */
+    font-size: 1em;
+    pointer-events: none; /* Impede cliques no rótulo */
+    transition: all 0.5s ease-in-out; /* Transição suave */
+}
+
+/* Animação do rótulo ao focar ou preencher o campo */
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px; /* Move o rótulo para cima */
+    font-size: 0.8em; /* Reduz o tamanho da fonte */
+}
+
+.inputBox input {
+    width: 100%; /* Largura total */
+    height: 60px; /* Altura do campo */
+    background: transparent; /* Fundo transparente */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno padrão */
+    font-size: 1em; /* Tamanho da fonte */
+    padding: 0 35px 0 5px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+.inputBox ion-icon {
+    position: absolute;
+    right: 8px; /* Posiciona o ícone à direita */
+    color: #fff; /* Cor do ícone */
+    font-size: 1.2em; /* Tamanho do ícone */
+    top: 20px; /* Posiciona verticalmente */
+}
+
+/* Opções de "Lembrar-me" e "Esqueceu a senha?" */
+.forget {
+    margin: 35px 0; /* Espaçamento acima e abaixo */
+    font-size: 0.85em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+}
+
+.forget label {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.forget label input {
+    margin-right: 3px; /* Espaçamento entre o checkbox e o texto */
+}
+
+.forget a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Negrito */
+}
+
+.forget a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Botão de login */
+button {
+    width: 100%; /* Largura total */
+    height: 40px; /* Altura do botão */
+    border-radius: 40px; /* Bordas arredondadas */
+    background: #fff; /* Fundo branco */
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno padrão */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+    font-size: 1em; /* Tamanho da fonte */
+    font-weight: 600; /* Negrito */
+    transition: all 0.5s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente ao passar o mouse */
+    color: #007bff; /* Altera a cor do texto */
+}
+
+/* Link para registrar-se */
+.register {
+    font-size: 0.9em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin: 25px 0 10px; /* Espaçamento acima e abaixo */
+}
+
+.register p a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Negrito */
+    color: #fff; /* Cor do link */
+}
+
+.register p a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem; /* Reduz o espaçamento interno */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .inputBox {
+        margin: 20px 0; /* Reduz o espaçamento entre os campos */
+    }
+
+    .inputBox label {
+        font-size: 0.9em; /* Reduz o tamanho do rótulo */
+    }
+
+    .inputBox input {
+        height: 40px; /* Reduz a altura do campo */
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    .inputBox ion-icon {
+        font-size: 1em; /* Reduz o tamanho do ícone */
+        top: 15px; /* Ajusta a posição vertical */
+    }
+
+    button {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .register {
+        font-size: 0.8em; /* Reduz o tamanho do texto do link */
+    }
+}
